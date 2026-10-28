@@ -4,7 +4,7 @@
 
 === GAME: 51_by_5 ===
 TITRE: 51 BY 5
-BADGE_AMBIANCE: Classique revisité
+BADGE_AMBIANCE: Précision
 BADGE_JOUEURS: 1 à 8 joueurs
 
 [OBJECTIF]
@@ -34,19 +34,74 @@ BADGE_AMBIANCE: Classique revisité
 BADGE_JOUEURS: 2 à 8 joueurs
 
 [OBJECTIF]
-Éliminer tous ses adversaires en touchant leurs numéros cibles, tout en protégeant son propre matricule.
+Éliminer tous ses adversaires en touchant leurs numéros cibles, tout en protégeant son propre matricule secret.
 
 [DEROULEMENT]
-- Au début de la partie, chaque joueur se voit attribuer un numéro cible (de 1 à 20).
-- Tout le monde commence avec [=5 vies].
-- Pour devenir « Killer » et être autorisé à attaquer, un joueur doit d'abord toucher 3 fois son propre numéro.
+- Au début de la partie, chaque joueur se voit attribuer secrètement un numéro cible (de 1 à 20).
+- Tout le monde commence avec [=3 vies].
+- Pour devenir « Killer » et être autorisé à attaquer, un joueur doit d'abord toucher son propre numéro.
 
 [TWIST: Statut Killer]
 - Une fois le statut « Killer » activé, chaque tir placé sur le numéro d'un adversaire lui retire { -1 vie } ({ -2 vies } pour un Double, { -3 vies } pour un Triple).
-- Attention : si vous touchez votre propre numéro en étant Killer, vous perdez { -1 vie }.
+- Pour recharger (maximum de minuition [=3 munitions]), il faut tirer sur son propre numéro.
 
 [VICTOIRE]
 - Le dernier joueur en vie sur le pas de tir remporte la partie.
+
+
+=== GAME: scram ===
+TITRE: SCRAM
+BADGE_AMBIANCE: Duel & Tactique
+BADGE_JOUEURS: 2 joueurs (ou 2 équipes)
+
+[OBJECTIF]
+Un duel asymétrique en deux mi-temps : le Bloqueur tente de fermer la cible pendant que le Marqueur engrange un maximum de points.
+
+[DEROULEMENT]
+- Le jeu se déroule en 2 manches :
+  • Manche 1 : Le Joueur 1 est « Bloqueur » (Stopper) et le Joueur 2 est « Marqueur » (Scorer).
+  • Manche 2 : Les rôles sont inversés.
+- Tous les secteurs de 1 à 20 et le Bull sont ouverts au début de chaque manche.
+
+[TWIST: Rôles & Verrouillage]
+- Rôle du Bloqueur : dès qu'il touche un secteur (simple, double ou triple), ce secteur est fermé et devient inutilisable pour le reste de la manche.
+- Rôle du Marqueur : il tire sur les secteurs encore ouverts pour accumuler un maximum de points. Les secteurs fermés par le Bloqueur ne rapportent rien.
+- Le Marqueur peut utiliser les multiplicateurs double et triple pour rapporter plus de points.
+- La manche s'arrête dès que le Bloqueur a fermé l'intégralité des 20 cibles (1 à 20).
+- Les Bull et Double Bull peuvent être fermés par le Bloqueur mais ne sont pas obligés d'être fermés pour terminer la manche.
+
+[VICTOIRE]
+- Le joueur qui a cumulé le score le plus élevé lors de sa phase de « Marqueur » remporte le duel.
+
+
+=== GAME: carre_magique ===
+TITRE: CARRÉ MAGIQUE
+BADGE_AMBIANCE: Réflexion & Précision
+BADGE_JOUEURS: 1 à 6 joueurs
+
+[OBJECTIF]
+Terminer la partie avec le score le plus bas possible (les scores négatifs sont autorisés) en complétant sa grille 3x3 et en anticipant ses chiffres grâce aux propriétés mathématiques du carré magique.
+
+[DEROULEMENT]
+- Chaque joueur possède son propre carré magique secret de 9 cases, garni des chiffres de 1 à 9 (la somme de chaque ligne, colonne et diagonale fait toujours exactement 15).
+- Chaque joueur lance ses 3 fléchettes par tour :
+  • Tir sur un secteur de 1 à 9 : crédite la valeur touchée au score et dévoile l'emplacement de ce chiffre sur sa grille.
+  • Tir sur un secteur de 10 à 20 : crédite les points au score sans rien révéler.
+  • Tir manqué (Miss) : pénalité immédiate de {+20 points} sans révélation.
+  • Bulle (Single Bull) : déduit {-25 points} du score.
+  • Centre (Double Bull) : déduit {-50 points} du score.
+  (Le Bull permet donc d'alléger drastiquement son score total).
+
+[TWIST: Malus de Vitesse & Déduction]
+- Dès qu'un joueur révèle entièrement une ligne (3), une colonne (3) ou une diagonale (2), il encaisse un malus de retard de [=15 points × rang] :
+  • 1er joueur à compléter cet alignement précis : {0 point de malus} (15 × 0)
+  • 2ème joueur à compléter son propre alignement équivalent : {+15 points de malus} (15 × 1)
+  • 3ème joueur : {+30 points de malus} (15 × 2), et ainsi de suite.
+- Déduction tactique : sachant que chaque axe totalise 15, un joueur peut déduire les chiffres manquants pour cibler directement les bons secteurs et éviter les tirs inutiles.
+
+[VICTOIRE]
+- Le dernier tour de table est déclenché dès qu'un joueur dévoile l'intégralité de ses 9 cases.
+- Le joueur avec le total de points le plus bas l'emporte (celui qui termine sa grille en premier n'est pas garanti de gagner).
 
 
 === GAME: truth_or_dart ===
@@ -82,19 +137,27 @@ BADGE_AMBIANCE: Spicy
 BADGE_JOUEURS: 2 à 4 joueurs
 
 [OBJECTIF]
-Rester habillé en vidant son compteur de score (301 ou 501) plus vite que ses adversaires.
+Rester habillé en vidant son compteur de score (301 ou 501) plus vite que ses adversaires tout en évitant d'être la plus faible volée de chaque tour.
 
 [DEROULEMENT]
-- Les joueurs s'affrontent sur une base classique de [=301 points] ou [=501 points].
-- À la fin de chaque tour complet (après le passage de tous les joueurs), celui qui a réalisé le total de volée le plus faible sur la manche perd un vêtement.
+- Les joueurs s'affrontent sur une base de [=301 points] ou [=501 points].
+- Chaque joueur lance ses 3 fléchettes à son tour pour faire descendre son compteur.
+- Arrivée directe (Single Out) : il suffit d'atteindre exactement 0 point pour gagner, AUCUN double final n'est requis.
+- En cas de dépassement de 0 (« Bust »), la volée est nulle (0 pt décompté) et le joueur s'expose directement à la sanction vestimentaire du tour.
+- À la fin de chaque tour complet (après le passage de tous les participants), le joueur ayant réalisé le plus faible total de volée sur la manche perd un vêtement.
+- En cas d'égalité parfaite sur le plus faible score de volée : aucun vêtement n'est retiré pour ce tour.
 
-[TWIST: Ordre de déshabillage]
-- Profil Homme (4 pièces) : [=Haut → Pantalon → Chaussettes → Sous-vêtement]
-- Profil Femme (5 pièces) : [=Haut → Pantalon → Chaussettes → Soutien-gorge → Culotte]
+[TWIST: Piège du Finish & Remontada]
+- Le Piège du Finish : un joueur en tête qui n'a plus que quelques points à valider (ex: 4 ou 7) ne pourra marquer qu'une toute petite volée pour ne pas buster. Il devient alors une cible facile pour le retrait de vêtement face aux poursuivants qui canardent les gros secteurs !
+- La Remontada : un joueur en mauvaise posture vestimentaire (0 ou 1 vêtement restant) réalise le meilleur score sur une manche, il récupère un vêtement !
+
+[ORDRE DE DÉSHABILLAGE]
+- Profil Homme (4 pièces) : [=Haut ou Pantalon ou Chaussettes → Sous-vêtement en dernier]
+- Profil Femme (5 pièces) : [=Haut ou Pantalon ou Chaussettes ou Soutien-gorge → Culotte en dernier]
 
 [VICTOIRE]
-- Un joueur qui atteint exactement 0 point remporte la partie immédiatement et conserve sa tenue.
-- Un joueur qui perd son dernier sous-vêtement subit la défaite finale.
+- Le premier joueur qui valide exactement 0 point remporte la partie.
+- Les compteurs de vêtements de rentrent pas en compte pour gagner ou non la partie.
 
 
 === GAME: roulette_russe ===
@@ -103,16 +166,59 @@ BADGE_AMBIANCE: Crazy
 BADGE_JOUEURS: 2 à 6 joueurs
 
 [OBJECTIF]
-Survivre au barillet en marquant un maximum de points sans faire exploser le numéro piégé sur la cible.
+Accumuler un maximum de points en déminant la cible secteur par secteur tout en évitant de déclencher le numéro piégé dissimulé.
 
 [DEROULEMENT]
-- La cible dissimule un secteur mortel généré aléatoirement.
-- Chaque joueur lance ses 3 fléchettes sur les secteurs de son choix pour engranger des points.
+- La cible dissimule un secteur mortel généré aléatoirement parmi les numéros de 1 à 20.
+- Chaque joueur lance ses 3 fléchettes à son tour :
+  • Tir sur un secteur sain non découvert : le joueur marque les points et le numéro passe en vert (secteur sécurisé).
+  • Secteur sécurisé (vert) : il peut être visé pour capitaliser des points sans aucun risque d'explosion tant qu'il reste ouvert.
+  • Doubles et Triples autorisés : toucher un anneau multiplicateur sur un secteur ouvert multiplie les points engrangés (ex: Triple 20 = 60 pts).
+- Fermeture d'un secteur :
+  • Au bout de 3 tirs au total sur un secteur (qu'il s'agisse de simples, doubles ou triples), ce secteur se ferme définitivement et ne peut plus rapporter aucun point.
 
-[TWIST: Contraintes & Explosion]
-- Interdiction de toucher plus de 3 fois le même secteur sur une volée pour éviter les tirs de sécurité trop faciles.
-- Toucher le secteur piégé déclenche l'explosion : le joueur perd {tous ses points de la manche} et encaisse {-1 balle}.
+[TWIST: Sanctuaire du Bull, Explosion & Règle Anti-Jeu]
+- Le Bull (Sanctuaire) :
+  • Le Single Bull (25 pts) et le Double Bull (50 pts) ne peuvent JAMAIS être piégés et ne se ferment JAMAIS.
+  • C'est la zone de tir sécurisée par excellence pour assurer des points en toute tranquillité.
+- Explosion :
+  • Toucher le numéro piégé déclenche la détonation immédiate : le joueur perd l'intégralité de son score (retour brutal à {0 point}) et son tour s'arrête net.
+  • Le piège se réarme alors aussitôt sur un nouveau secteur aléatoire (parmi les numéros restants, hors celui qui vient d'exploser).
+- Règle Anti-Jeu (Score divisé par 2) :
+  • Si un joueur effectue une volée de 3 fléchettes sans inscrire le moindre point (Miss ou tirs répétés sur des secteurs déjà fermés), son score total accumulé est divisé par 2.
 
 [VICTOIRE]
-- Au score : après le nombre de tours défini sans élimination totale.
-- Par survie : le dernier joueur encore debout remporte la partie.
+- La partie prend fin dès que l'ensemble des secteurs de 1 à 20 ont été découverts et sécurisés (à l'exception du dernier numéro piégé).
+- Le joueur avec le plus de points remporte la victoire.
+
+
+=== GAME: mojito ===
+TITRE: MOJITO
+BADGE_AMBIANCE: Soirée & Bar
+BADGE_JOUEURS: 2 à 8 joueurs
+
+[OBJECTIF]
+Rassembler les 5 ingrédients indispensables à la recette, puis porter un toast victorieux en validant un Double pour remporter la manche.
+
+[DEROULEMENT]
+- Les 5 ingrédients du cocktail sont assignés aux secteurs suivants :
+  • Rhum (Secteur 20)
+  • Menthe fraîche (Secteur 19)
+  • Citron vert (Secteur 18)
+  • Sucre de canne (Secteur 17)
+  • Eau gazeuse (Secteur 16)
+- Chaque joueur lance ses 3 fléchettes par manche pour récupérer ses ingrédients.
+- Toucher un secteur d'ingrédient manquant l'ajoute immédiatement à sa recette.
+
+[TWIST: Toast Piégé, Pillage & Foudre du Bull]
+- Le Toast Piégé (Verre Renversé) :
+  • Pour gagner, il faut valider son cocktail complet en « trinquant » avec n'importe quel secteur Double.
+  • Attention : toucher un anneau Double alors que les 5 ingrédients ne sont PAS encore tous réunis renverse le verre ! Le joueur perd l'intégralité de sa recette et repart brutalement à [=0 ingrédient].
+- Vol d'Ingrédient (Triple Vengeur) :
+  • Réaliser un Triple sur un ingrédient que l'on possède déjà retire cet ingrédient précis à l'ensemble des adversaires qui l'avaient acquis.
+- La Foudre du Bull :
+  • Le Single Bull (25) retire [=1 ingrédient aléatoire] à tous les adversaires.
+  • Le Double Bull (50) retire [=2 ingrédients aléatoires] à tous les adversaires.
+
+[VICTOIRE]
+- Le premier joueur qui réunit les 5 ingrédients et valide son cocktail en touchant un Double (n'importe lequel) remporte la partie.
