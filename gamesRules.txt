@@ -1,0 +1,118 @@
+======================================================================
+                      DARTSFANTASY - RÈGLES DES JEUX
+======================================================================
+
+=== GAME: 51_by_5 ===
+TITRE: 51 BY 5
+BADGE_AMBIANCE: Classique revisité
+BADGE_JOUEURS: 1 à 8 joueurs
+
+[OBJECTIF]
+Être le premier joueur à atteindre exactement 51 points en ne validant que des volées divisibles par 5.
+
+[DEROULEMENT]
+- Chaque joueur lance ses 3 fléchettes à chaque manche.
+- Les points de la volée ne sont comptabilisés QUE si la somme totale des 3 tirs est un multiple exact de 5 (ex: 15, 20, 45).
+- Chaque tranche de 5 points rapporte 1 point au score global :
+  [=25 pts réussis = +5 pts]
+  [=40 pts réussis = +8 pts]
+  [=50 pts réussis = +10 pts]
+- Si le total des 3 fléchettes n'est pas divisible par 5 : la volée est nulle, aucun point n'est marqué.
+- Interdiction de terminer sa volée par un tir manqué (Miss) : si la 3ème fléchette est un Miss, la volée entière est annulée (0 point).
+
+[TWIST: Aide du Tribunal]
+- À la 3ème fléchette, le clavier met en surbrillance automatique tous les secteurs qui permettent de boucler un multiple de 5 selon le multiplicateur actif (X1, X2 ou X3).
+
+[VICTOIRE]
+- Le premier joueur à atteindre pile 51 points l'emporte.
+- Si un joueur dépasse 51 (« Bust »), son score retombe à ce qu'il était au début de son tour.
+
+
+=== GAME: blind_killer ===
+TITRE: BLIND KILLER
+BADGE_AMBIANCE: Classique revisité
+BADGE_JOUEURS: 2 à 8 joueurs
+
+[OBJECTIF]
+Éliminer tous ses adversaires en touchant leurs numéros cibles, tout en protégeant son propre matricule.
+
+[DEROULEMENT]
+- Au début de la partie, chaque joueur se voit attribuer un numéro cible (de 1 à 20).
+- Tout le monde commence avec [=5 vies].
+- Pour devenir « Killer » et être autorisé à attaquer, un joueur doit d'abord toucher 3 fois son propre numéro.
+
+[TWIST: Statut Killer]
+- Une fois le statut « Killer » activé, chaque tir placé sur le numéro d'un adversaire lui retire { -1 vie } ({ -2 vies } pour un Double, { -3 vies } pour un Triple).
+- Attention : si vous touchez votre propre numéro en étant Killer, vous perdez { -1 vie }.
+
+[VICTOIRE]
+- Le dernier joueur en vie sur le pas de tir remporte la partie.
+
+
+=== GAME: truth_or_dart ===
+TITRE: TRUTH OR DART
+BADGE_AMBIANCE: Crazy
+BADGE_JOUEURS: 2 à 8 joueurs
+
+[OBJECTIF]
+Être en tête des points en réussissant des contrats sportifs aux fléchettes ou en assumant des défis en cas d'échec.
+
+[DEROULEMENT]
+- Seuil de victoire choisi au départ : [=15 points (Express)] ou [=30 points (Standard)].
+- Au début de sa volée de 3 fléchettes, le joueur reçoit un contrat aléatoire (ex: « Marquer au moins 45 points », « Toucher au moins un Double »).
+- Contrat réussi : {+3 points} immédiats et passage au joueur suivant.
+- Contrat manqué : le joueur choisit une carte Action ou Vérité.
+  • Défi relevé face au groupe : {+1 point}
+  • Refus / Esquive : {-2 points} (score plancher à 0)
+
+[TWIST: Gage de la Dernière Chance]
+- Dès qu'un joueur atteint le seuil (15 ou 30 pts), le tour de table en cours se termine pour garantir l'égalité des manches.
+- Avant le podium, le dernier du classement affronte le « Gage Final » :
+  • Gage validé par le groupe : {+10 points}
+  • Gage refusé : {-5 points}
+
+[VICTOIRE]
+- Le joueur avec le plus de points l'emporte.
+- En cas d'égalité, le plus grand nombre de contrats sportifs réussis départage les joueurs.
+
+
+=== GAME: strip_target ===
+TITRE: STRIP TARGET
+BADGE_AMBIANCE: Spicy
+BADGE_JOUEURS: 2 à 4 joueurs
+
+[OBJECTIF]
+Rester habillé en vidant son compteur de score (301 ou 501) plus vite que ses adversaires.
+
+[DEROULEMENT]
+- Les joueurs s'affrontent sur une base classique de [=301 points] ou [=501 points].
+- À la fin de chaque tour complet (après le passage de tous les joueurs), celui qui a réalisé le total de volée le plus faible sur la manche perd un vêtement.
+
+[TWIST: Ordre de déshabillage]
+- Profil Homme (4 pièces) : [=Haut → Pantalon → Chaussettes → Sous-vêtement]
+- Profil Femme (5 pièces) : [=Haut → Pantalon → Chaussettes → Soutien-gorge → Culotte]
+
+[VICTOIRE]
+- Un joueur qui atteint exactement 0 point remporte la partie immédiatement et conserve sa tenue.
+- Un joueur qui perd son dernier sous-vêtement subit la défaite finale.
+
+
+=== GAME: roulette_russe ===
+TITRE: ROULETTE RUSSE
+BADGE_AMBIANCE: Crazy
+BADGE_JOUEURS: 2 à 6 joueurs
+
+[OBJECTIF]
+Survivre au barillet en marquant un maximum de points sans faire exploser le numéro piégé sur la cible.
+
+[DEROULEMENT]
+- La cible dissimule un secteur mortel généré aléatoirement.
+- Chaque joueur lance ses 3 fléchettes sur les secteurs de son choix pour engranger des points.
+
+[TWIST: Contraintes & Explosion]
+- Interdiction de toucher plus de 3 fois le même secteur sur une volée pour éviter les tirs de sécurité trop faciles.
+- Toucher le secteur piégé déclenche l'explosion : le joueur perd {tous ses points de la manche} et encaisse {-1 balle}.
+
+[VICTOIRE]
+- Au score : après le nombre de tours défini sans élimination totale.
+- Par survie : le dernier joueur encore debout remporte la partie.

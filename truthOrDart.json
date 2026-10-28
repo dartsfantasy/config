@@ -1,0 +1,198 @@
+{
+  "contracts": [
+    {
+      "id": "C_01",
+      "label": "Score modeste",
+      "description": "Réaliser au moins 30 points sur la volée.",
+      "level": "low",
+      "validatorType": "MIN_SCORE_30"
+    },
+    {
+      "id": "C_02",
+      "label": "Dans le mille",
+      "description": "Toucher au moins une fois le secteur 20 (simple, double ou triple).",
+      "level": "low",
+      "validatorType": "HIT_SECTOR_20"
+    },
+    {
+      "id": "C_03",
+      "label": "Équilibre",
+      "description": "Marquer un total pair avec les 3 fléchettes.",
+      "level": "low",
+      "validatorType": "EVEN_SUM"
+    },
+    {
+      "id": "C_04",
+      "label": "Dispersion",
+      "description": "Toucher 3 chiffres distincts (aucun doublon).",
+      "level": "low",
+      "validatorType": "DISTINCT_3"
+    },
+    {
+      "id": "C_05",
+      "label": "Rythme moyen",
+      "description": "Réaliser au moins 45 points sur la volée.",
+      "level": "medium",
+      "validatorType": "MIN_SCORE_45"
+    },
+    {
+      "id": "C_06",
+      "label": "Palette de couleurs",
+      "description": "Toucher au moins une zone rouge ou verte (bague double/triple ou bull).",
+      "level": "medium",
+      "validatorType": "HIT_COLORED_ZONE"
+    },
+    {
+      "id": "C_07",
+      "label": "Chiffres impairs",
+      "description": "Toucher au moins 2 secteurs avec un numéro impair.",
+      "level": "medium",
+      "validatorType": "AT_LEAST_2_ODD"
+    },
+    {
+      "id": "C_08",
+      "label": "Zone basse",
+      "description": "Placer au moins 2 fléchettes sur des chiffres situés entre 1 et 10.",
+      "level": "medium",
+      "validatorType": "AT_LEAST_2_LOW"
+    },
+    {
+      "id": "C_09",
+      "label": "Précision chic",
+      "description": "Valider au moins un Double ou un Triple sur la volée.",
+      "level": "high",
+      "validatorType": "AT_LEAST_ONE_MULTI"
+    },
+    {
+      "id": "C_10",
+      "label": "Gros score",
+      "description": "Réaliser au moins 60 points sur la volée.",
+      "level": "high",
+      "validatorType": "MIN_SCORE_60"
+    },
+    {
+      "id": "C_11",
+      "label": "Le Cœur de cible",
+      "description": "Toucher le Bull ou le Double Bull.",
+      "level": "high",
+      "validatorType": "HIT_BULL"
+    },
+    {
+      "id": "C_12",
+      "label": "Trilogie ascendante",
+      "description": "Chaque fléchette doit avoir une valeur supérieure à la précédente.",
+      "level": "high",
+      "validatorType": "ASCENDING_HITS"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "CH_T01",
+      "type": "truth",
+      "level": "low",
+      "content": "Quelle est la première impression (positive ou fausse) que tu as eue sur la personne à ta gauche ?"
+    },
+    {
+      "id": "CH_T02",
+      "type": "truth",
+      "level": "low",
+      "content": "Quel est ton plus gros « plaisir coupable » inavouable en musique ou à la télévision ?"
+    },
+    {
+      "id": "CH_D01",
+      "type": "dare",
+      "level": "low",
+      "content": "Fais le service des verres ou propose un toast élégant pour l'ensemble des joueurs."
+    },
+    {
+      "id": "CH_D02",
+      "type": "dare",
+      "level": "low",
+      "content": "Lance ta prochaine volée de fléchettes de ta mauvaise main (main non dominante)."
+    },
+    {
+      "id": "CH_T03",
+      "type": "truth",
+      "level": "medium",
+      "content": "Raconte ton pire date ou le plus gros râteau que tu aies pris."
+    },
+    {
+      "id": "CH_T04",
+      "type": "truth",
+      "level": "medium",
+      "content": "Si tu devais échanger ta vie pendant 24h avec l'un des joueurs présents, qui choisirais-tu et pourquoi ?"
+    },
+    {
+      "id": "CH_T05",
+      "type": "truth",
+      "level": "medium",
+      "content": "Quel est le dernier mensonge anodin que tu as dit à quelqu'un dans cette pièce ?"
+    },
+    {
+      "id": "CH_D03",
+      "type": "dare",
+      "level": "medium",
+      "content": "Montre la dernière photo prise avec ton smartphone (sans avoir le droit de trier)."
+    },
+    {
+      "id": "CH_D04",
+      "type": "dare",
+      "level": "medium",
+      "content": "Laisse la personne qui a le score le plus élevé lire à voix haute le dernier message privé que tu as reçu."
+    },
+    {
+      "id": "CH_D05",
+      "type": "dare",
+      "level": "medium",
+      "content": "Simule un compliment passionné et théâtral les yeux dans les yeux avec ton adversaire direct."
+    },
+    {
+      "id": "CH_T06",
+      "type": "truth",
+      "level": "high",
+      "content": "Quel est le plus gros secret ou fantasme inavoué que tu n'as jamais osé révéler à personne ici ?"
+    },
+    {
+      "id": "CH_T07",
+      "type": "truth",
+      "level": "high",
+      "content": "Quelle est la chose la plus illégale ou borderline que tu aies faite sans te faire attraper ?"
+    },
+    {
+      "id": "CH_D06",
+      "type": "dare",
+      "level": "high",
+      "content": "Appelle un contact au hasard dans ton répertoire téléphonique et tiens une conversation sérieuse de 45 secondes en chuchotant."
+    },
+    {
+      "id": "CH_D07",
+      "type": "dare",
+      "level": "high",
+      "content": "Retire un vêtement de ton choix (style Strip Target) et reste ainsi jusqu'à la fin de la partie."
+    },
+    {
+      "id": "CH_F01",
+      "type": "truth",
+      "level": "final",
+      "content": "Gage Final : Confesse sans filtre la situation la plus honteuse de ta vie adulte. Le groupe vote pour valider si l'anecdote est suffisamment croustillante."
+    },
+    {
+      "id": "CH_F02",
+      "type": "dare",
+      "level": "final",
+      "content": "Gage Final : Laisse le groupe dicter et envoyer un SMS court et déroutant au 5ᵉ contact de ton journal d'appels récents."
+    },
+    {
+      "id": "CH_F03",
+      "type": "dare",
+      "level": "final",
+      "content": "Gage Final : Prépare et bois cul-sec un « cocktail maison » mystère composé de 3 ingrédients choisis par les joueurs gagnants."
+    },
+    {
+      "id": "CH_F04",
+      "type": "dare",
+      "level": "final",
+      "content": "Gage Final : Fais 20 pompes impeccables ou danse un slow sensuel en solo avec la cible de fléchettes sous les encouragements du groupe."
+    }
+  ]
+}
