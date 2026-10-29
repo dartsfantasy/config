@@ -85,114 +85,135 @@
       "validatorType": "ASCENDING_HITS"
     }
   ],
-  "challenges": [
-    {
-      "id": "CH_T01",
-      "type": "truth",
-      "level": "low",
-      "content": "Quelle est la première impression (positive ou fausse) que tu as eue sur la personne à ta gauche ?"
+  "packs": {
+    "classic": {
+      "id": "classic",
+      "label": "Classique",
+      "description": "Humour & autodérision • Idéal apéro, collègues ou famille",
+      "challenges": [
+        { "id": "CLA_T01", "type": "truth", "level": "low", "content": "Quelle est la première fausse impression que tu as eue sur quelqu'un autour de la cible ?" },
+        { "id": "CLA_T02", "type": "truth", "level": "low", "content": "Quel est ton pire plaisir coupable inavouable en musique ou télé-réalité ?" },
+        { "id": "CLA_T03", "type": "truth", "level": "low", "content": "Quelle est la recherche Google la plus ridicule dans ton historique récent ?" },
+        { "id": "CLA_T04", "type": "truth", "level": "low", "content": "Quel est le pire cadeau que tu aies reçu sans jamais oser le dire ?" },
+        { "id": "CLA_T05", "type": "truth", "level": "low", "content": "Quelle manie agaçante chez les autres ne supportes-tu absolument pas au quotidien ?" },
+        { "id": "CLA_D01", "type": "dare", "level": "low", "content": "Sers un verre ou apporte un en-cas à l'ensemble des joueurs présents." },
+        { "id": "CLA_D02", "type": "dare", "level": "low", "content": "Lance ta prochaine volée de ta mauvaise main (main non dominante)." },
+        { "id": "CLA_D03", "type": "dare", "level": "low", "content": "Fais un toast théâtral et poétique en l'honneur du joueur qui mène la partie." },
+        { "id": "CLA_D04", "type": "dare", "level": "low", "content": "Parle avec un accent étranger de ton choix jusqu'à la fin du prochain tour." },
+        { "id": "CLA_D05", "type": "dare", "level": "low", "content": "Tire ta prochaine volée en restant en équilibre strict sur un seul pied." },
+        { "id": "CLA_T06", "type": "truth", "level": "medium", "content": "Raconte la plus belle boulette ou gaffe que tu aies faite au travail ou en public." },
+        { "id": "CLA_T07", "type": "truth", "level": "medium", "content": "Quel est le plat ou l'ingrédient réputé délicieux que tu trouves absolument immangeable ?" },
+        { "id": "CLA_T08", "type": "truth", "level": "medium", "content": "Si tu pouvais effacer une décision prise il y a 5 ans, laquelle choisirais-tu ?" },
+        { "id": "CLA_T09", "type": "truth", "level": "medium", "content": "Quel achat complètement inutile et coûteux as-tu fait sur un coup de tête ?" },
+        { "id": "CLA_T10", "type": "truth", "level": "medium", "content": "Quelle célébrité tout le monde adore alors que tu ne peux pas la voir en peinture ?" },
+        { "id": "CLA_D06", "type": "dare", "level": "medium", "content": "Commente le tir du prochain joueur à la façon d'un commentateur sportif survolté." },
+        { "id": "CLA_D07", "type": "dare", "level": "medium", "content": "Imite la démarche et une réplique d'un des joueurs présents jusqu'à ce que le groupe devine qui c'est." },
+        { "id": "CLA_D08", "type": "dare", "level": "medium", "content": "Fais 15 squats impeccables avant de reprendre tes fléchettes." },
+        { "id": "CLA_D09", "type": "dare", "level": "medium", "content": "Ne réponds à toutes les questions posées que par des rimes jusqu'à ton prochain tour." },
+        { "id": "CLA_D10", "type": "dare", "level": "medium", "content": "Laisse ton voisin de droite choisir le numéro précis que tu dois viser avec ta première fléchette." },
+        { "id": "CLA_T11", "type": "truth", "level": "high", "content": "Quelle anecdote embarrassante d'adolescence espères-tu que personne n'apprenne jamais ?" },
+        { "id": "CLA_T12", "type": "truth", "level": "high", "content": "Quel est le plus gros mensonge que tu aies sorti pour annuler un engagement sans culpabiliser ?" },
+        { "id": "CLA_T13", "type": "truth", "level": "high", "content": "Si tu devais donner le prénom de la personne la plus pénible de ton entourage, quel serait-il ?" },
+        { "id": "CLA_T14", "type": "truth", "level": "high", "content": "Quelle est la chose la plus enfantine que tu continues à faire en secret chez toi ?" },
+        { "id": "CLA_T15", "type": "truth", "level": "high", "content": "Si un film retraçait ta vie, quel serait son titre le plus humiliant mais réaliste ?" },
+        { "id": "CLA_D11", "type": "dare", "level": "high", "content": "Lance ta prochaine volée dos à la cible en regardant par-dessus ton épaule." },
+        { "id": "CLA_D12", "type": "dare", "level": "high", "content": "Laisse les autres joueurs choisir ton surnom officiel pour le reste de la soirée." },
+        { "id": "CLA_D13", "type": "dare", "level": "high", "content": "Tiens en position de chaise contre le mur pendant 45 secondes sans faiblir." },
+        { "id": "CLA_D14", "type": "dare", "level": "high", "content": "Chante le refrain d'une chanson kitch choisie par le groupe avec un sérieux absolu." },
+        { "id": "CLA_D15", "type": "dare", "level": "high", "content": "Réalise ta prochaine volée accroupi au pas de tir." },
+        { "id": "CLA_F01", "type": "truth", "level": "final", "content": "Gage Final : Raconte dans les détails le plus gros moment de honte de ta vie d'adulte." },
+        { "id": "CLA_F02", "type": "dare", "level": "final", "content": "Gage Final : Range entièrement l'espace de jeu et apporte un rafraîchissement au vainqueur." },
+        { "id": "CLA_F03", "type": "dare", "level": "final", "content": "Gage Final : Fais une révérence à chaque participant en déclamant un compliment sincère." },
+        { "id": "CLA_F04", "type": "truth", "level": "final", "content": "Gage Final : Confesse un secret de famille ou d'enfance jamais partagé à table." },
+        { "id": "CLA_F05", "type": "dare", "level": "final", "content": "Gage Final : Fais 20 pompes sous le décompte à voix haute du groupe." },
+        { "id": "CLA_F06", "type": "dare", "level": "final", "content": "Gage Final : Récite l'alphabet à l'envers sans hésiter en moins de 30 secondes." }
+      ]
     },
-    {
-      "id": "CH_T02",
-      "type": "truth",
-      "level": "low",
-      "content": "Quel est ton plus gros « plaisir coupable » inavouable en musique ou à la télévision ?"
+    "crazy": {
+      "id": "crazy",
+      "label": "Crazy",
+      "description": "Ambiance bar, défis physiques & taquineries festives",
+      "challenges": [
+        { "id": "CRZ_T01", "type": "truth", "level": "low", "content": "Qui dans cette pièce survivrait le moins longtemps sur une île déserte et pourquoi ?" },
+        { "id": "CRZ_T02", "type": "truth", "level": "low", "content": "Quel est le truc le plus ridicule ou illogique que tu aies acheté en rentrant de soirée ?" },
+        { "id": "CRZ_T03", "type": "truth", "level": "low", "content": "Quelle est ta pire cuite ou anecdote de soirée festive que tu assumes à moitié ?" },
+        { "id": "CRZ_T04", "type": "truth", "level": "low", "content": "Qui ici a les pires goûts musicaux selon toi ?" },
+        { "id": "CRZ_T05", "type": "truth", "level": "low", "content": "As-tu déjà fait semblant de reconnaître quelqu'un pendant de longues minutes ? Raconte." },
+        { "id": "CRZ_D01", "type": "dare", "level": "low", "content": "Bois 2 gorgées de ton verre pour chaque fléchette hors cible lors de ta prochaine volée." },
+        { "id": "CRZ_D02", "type": "dare", "level": "low", "content": "Mime une fléchette humaine au ralenti pour célébrer le prochain tir réussi." },
+        { "id": "CRZ_D03", "type": "dare", "level": "low", "content": "Garde une fléchette (sans pointe ou pointe protégée) entre les lèvres jusqu'à ton prochain tour." },
+        { "id": "CRZ_D04", "type": "dare", "level": "low", "content": "Tire ta prochaine volée en dansant sans t'arrêter." },
+        { "id": "CRZ_D05", "type": "dare", "level": "low", "content": "Bois une gorgée du verre de la personne qui a le plus faible score." },
+        { "id": "CRZ_T06", "type": "truth", "level": "medium", "content": "Qui autour de cette cible serait arrêté en premier lors d'une virée nocturne qui tourne mal ?" },
+        { "id": "CRZ_T07", "type": "truth", "level": "medium", "content": "Raconte la pire excuse que tu aies donnée pour justifier un retard monumental." },
+        { "id": "CRZ_T08", "type": "truth", "level": "medium", "content": "Quel surnom ridicule te donnait-on plus jeune et que tu détestes ?" },
+        { "id": "CRZ_T09", "type": "truth", "level": "medium", "content": "Quelle est la chose la plus étrange que tu aies mangée lors d'un pari débile ?" },
+        { "id": "CRZ_T10", "type": "truth", "level": "medium", "content": "Si tu devais bannir un joueur présent d'une virée en festival, qui choisirais-tu ?" },
+        { "id": "CRZ_D06", "type": "dare", "level": "medium", "content": "Montre sans trier la photo la plus compromettante ou bizarre de ta galerie smartphone." },
+        { "id": "CRZ_D07", "type": "dare", "level": "medium", "content": "Fais un bras de fer immédiat avec le joueur de ton choix." },
+        { "id": "CRZ_D08", "type": "dare", "level": "medium", "content": "Fais tourner 3 fois sur toi-même avant de lancer chaque fléchette de ta prochaine volée." },
+        { "id": "CRZ_D09", "type": "dare", "level": "medium", "content": "Laisse le joueur en tête de partie écrire un mot loufoque au feutre sur ton bras." },
+        { "id": "CRZ_D10", "type": "dare", "level": "medium", "content": "Chante le refrain de ton choix en faisant des bruits d'instruments avec ta bouche." },
+        { "id": "CRZ_T11", "type": "truth", "level": "high", "content": "Quelle est la chose la plus borderline ou illégale que tu aies faite sans jamais te faire pincer ?" },
+        { "id": "CRZ_T12", "type": "truth", "level": "high", "content": "Quel secret inavouable sur un ami présent n'as-tu encore jamais osé révéler ?" },
+        { "id": "CRZ_T13", "type": "truth", "level": "high", "content": "Raconte ton réveil de lendemain de soirée le plus catastrophique." },
+        { "id": "CRZ_T14", "type": "truth", "level": "high", "content": "Si tu devais te faire tatouer un mot choisi par le groupe ce soir, accepterais-tu contre 500 € ?" },
+        { "id": "CRZ_T15", "type": "truth", "level": "high", "content": "Quel est le dossier le plus lourd que tu possèdes sur l'un des joueurs autour de la cible ?" },
+        { "id": "CRZ_D11", "type": "dare", "level": "high", "content": "Envoie un emoji déroutant (ex: aubergine ou clown) au 3ᵉ contact récent de tes messages." },
+        { "id": "CRZ_D12", "type": "dare", "level": "high", "content": "Mange une cuillère d'un condiment fort (moutarde, piment ou sauce forte) sans broncher." },
+        { "id": "CRZ_D13", "type": "dare", "level": "high", "content": "Appelle un contact au hasard et parle-lui en chuchotant pendant 30 secondes chrono." },
+        { "id": "CRZ_D14", "type": "dare", "level": "high", "content": "Fais 30 secondes de gainage pendant qu'un adversaire pose une fléchette en équilibre sur ton dos." },
+        { "id": "CRZ_D15", "type": "dare", "level": "high", "content": "Bois cul-sec un verre contenant un mélange insolite de 2 boissons préparé par tes adversaires." },
+        { "id": "CRZ_F01", "type": "dare", "level": "final", "content": "Gage Final : Bois cul-sec le « cocktail du perdant » préparé par les vainqueurs." },
+        { "id": "CRZ_F02", "type": "dare", "level": "final", "content": "Gage Final : Laisse le groupe publier une story ou un statut absurde sur ton réseau social favori." },
+        { "id": "CRZ_F03", "type": "dare", "level": "final", "content": "Gage Final : Danse sur une musique ridicule choisie par le groupe pendant 1 minute complète." },
+        { "id": "CRZ_F04", "type": "truth", "level": "final", "content": "Gage Final : Raconte la pire bêtise de jeunesse qui a impliqué la police ou tes parents." },
+        { "id": "CRZ_F05", "type": "dare", "level": "final", "content": "Gage Final : Fais le service exclusif de boissons pour tous les joueurs jusqu'à la fin de la soirée." },
+        { "id": "CRZ_F06", "type": "dare", "level": "final", "content": "Gage Final : Envoie une note vocale délirante dictée par le vainqueur à l'un de tes proches." }
+      ]
     },
-    {
-      "id": "CH_D01",
-      "type": "dare",
-      "level": "low",
-      "content": "Fais le service des verres ou propose un toast élégant pour l'ensemble des joueurs."
-    },
-    {
-      "id": "CH_D02",
-      "type": "dare",
-      "level": "low",
-      "content": "Lance ta prochaine volée de fléchettes de ta mauvaise main (main non dominante)."
-    },
-    {
-      "id": "CH_T03",
-      "type": "truth",
-      "level": "medium",
-      "content": "Raconte ton pire date ou le plus gros râteau que tu aies pris."
-    },
-    {
-      "id": "CH_T04",
-      "type": "truth",
-      "level": "medium",
-      "content": "Si tu devais échanger ta vie pendant 24h avec l'un des joueurs présents, qui choisirais-tu et pourquoi ?"
-    },
-    {
-      "id": "CH_T05",
-      "type": "truth",
-      "level": "medium",
-      "content": "Quel est le dernier mensonge anodin que tu as dit à quelqu'un dans cette pièce ?"
-    },
-    {
-      "id": "CH_D03",
-      "type": "dare",
-      "level": "medium",
-      "content": "Montre la dernière photo prise avec ton smartphone (sans avoir le droit de trier)."
-    },
-    {
-      "id": "CH_D04",
-      "type": "dare",
-      "level": "medium",
-      "content": "Laisse la personne qui a le score le plus élevé lire à voix haute le dernier message privé que tu as reçu."
-    },
-    {
-      "id": "CH_D05",
-      "type": "dare",
-      "level": "medium",
-      "content": "Simule un compliment passionné et théâtral les yeux dans les yeux avec ton adversaire direct."
-    },
-    {
-      "id": "CH_T06",
-      "type": "truth",
-      "level": "high",
-      "content": "Quel est le plus gros secret ou fantasme inavoué que tu n'as jamais osé révéler à personne ici ?"
-    },
-    {
-      "id": "CH_T07",
-      "type": "truth",
-      "level": "high",
-      "content": "Quelle est la chose la plus illégale ou borderline que tu aies faite sans te faire attraper ?"
-    },
-    {
-      "id": "CH_D06",
-      "type": "dare",
-      "level": "high",
-      "content": "Appelle un contact au hasard dans ton répertoire téléphonique et tiens une conversation sérieuse de 45 secondes en chuchotant."
-    },
-    {
-      "id": "CH_D07",
-      "type": "dare",
-      "level": "high",
-      "content": "Retire un vêtement de ton choix (style Strip Target) et reste ainsi jusqu'à la fin de la partie."
-    },
-    {
-      "id": "CH_F01",
-      "type": "truth",
-      "level": "final",
-      "content": "Gage Final : Confesse sans filtre la situation la plus honteuse de ta vie adulte. Le groupe vote pour valider si l'anecdote est suffisamment croustillante."
-    },
-    {
-      "id": "CH_F02",
-      "type": "dare",
-      "level": "final",
-      "content": "Gage Final : Laisse le groupe dicter et envoyer un SMS court et déroutant au 5ᵉ contact de ton journal d'appels récents."
-    },
-    {
-      "id": "CH_F03",
-      "type": "dare",
-      "level": "final",
-      "content": "Gage Final : Prépare et bois cul-sec un « cocktail maison » mystère composé de 3 ingrédients choisis par les joueurs gagnants."
-    },
-    {
-      "id": "CH_F04",
-      "type": "dare",
-      "level": "final",
-      "content": "Gage Final : Fais 20 pompes impeccables ou danse un slow sensuel en solo avec la cible de fléchettes sous les encouragements du groupe."
+    "spicy": {
+      "id": "spicy",
+      "label": "Spicy (18+)",
+      "description": "Sensuel, intime & audacieux • Couples et soirées sans tabou",
+      "challenges": [
+        { "id": "SPI_T01", "type": "truth", "level": "low", "content": "Quel détail physique ou vestimentaire chez quelqu'un ici attire le plus ton regard ?" },
+        { "id": "SPI_T02", "type": "truth", "level": "low", "content": "Quelle est la tenue dans laquelle tu te sens le plus irrésistible ?" },
+        { "id": "SPI_T03", "type": "truth", "level": "low", "content": "Plutôt lumière tamisée ou obscurité totale ? Pourquoi ?" },
+        { "id": "SPI_T04", "type": "truth", "level": "low", "content": "Quel est ton plus grand tue-l'amour lors d'un premier rendez-vous ?" },
+        { "id": "SPI_T05", "type": "truth", "level": "low", "content": "Quel compliment sensuel t'a le plus marqué dans ta vie ?" },
+        { "id": "SPI_D01", "type": "dare", "level": "low", "content": "Déboutonne ou retire un premier accessoire ou vêtement (montre, bague, veste, chaussures)." },
+        { "id": "SPI_D02", "type": "dare", "level": "low", "content": "Regarde la personne de ton choix droit dans les yeux pendant 30 secondes sans rire." },
+        { "id": "SPI_D03", "type": "dare", "level": "low", "content": "Fais un massage des mains ou des épaules de 30 secondes au joueur à ta droite." },
+        { "id": "SPI_D04", "type": "dare", "level": "low", "content": "Murmure un compliment séduisant à l'oreille de ton adversaire direct." },
+        { "id": "SPI_D05", "type": "dare", "level": "low", "content": "Tire ta prochaine volée de manière ultra-sensuelle et lente." },
+        { "id": "SPI_T06", "type": "truth", "level": "medium", "content": "Quel est l'endroit le plus insolite ou risqué où tu aies déjà eu une relation intime ?" },
+        { "id": "SPI_T07", "type": "truth", "level": "medium", "content": "Si tu devais passer une nuit sans tabou avec un joueur autour de la cible, qui choisirais-tu ?" },
+        { "id": "SPI_T08", "type": "truth", "level": "medium", "content": "Quel fantasme récurrent n'as-tu encore jamais osé concrétiser ?" },
+        { "id": "SPI_T09", "type": "truth", "level": "medium", "content": "Quel est ton pire date romantique ou ton plus grand râteau amoureux ?" },
+        { "id": "SPI_T10", "type": "truth", "level": "medium", "content": "Quelle zone de ton corps est la plus sensible aux caresses inattendues ?" },
+        { "id": "SPI_D06", "type": "dare", "level": "medium", "content": "Retire un vêtement visible (pull, chemise, chaussettes) et reste ainsi pour les 3 prochains tours." },
+        { "id": "SPI_D07", "type": "dare", "level": "medium", "content": "Embrasse dans le cou la personne de ton choix." },
+        { "id": "SPI_D08", "type": "dare", "level": "medium", "content": "Laisse le joueur en tête passer délicatement ses doigts dans tes cheveux pendant 20 secondes." },
+        { "id": "SPI_D09", "type": "dare", "level": "medium", "content": "Danse un slow très rapproché de 45 secondes avec le participant de ton choix." },
+        { "id": "SPI_D10", "type": "dare", "level": "medium", "content": "Fais deviner un mot coquin au groupe uniquement par des gestes et mimiques sensuelles." },
+        { "id": "SPI_T11", "type": "truth", "level": "high", "content": "Quelle est l'expérience intime la plus torride ou mémorable de ta vie ?" },
+        { "id": "SPI_T12", "type": "truth", "level": "high", "content": "As-tu déjà eu une attirance inavouée pour le partenaire d'un ami ?" },
+        { "id": "SPI_T13", "type": "truth", "level": "high", "content": "Quel jeu de rôle ou scénario intime aimerais-tu secrètement tester ?" },
+        { "id": "SPI_T14", "type": "truth", "level": "high", "content": "Quel est le sextape, message ou photo coquine que tu as le plus craint de voir fuiter ?" },
+        { "id": "SPI_T15", "type": "truth", "level": "high", "content": "Quelle pratique intime réputée taboue as-tu déjà expérimentée et adorée ?" },
+        { "id": "SPI_D11", "type": "dare", "level": "high", "content": "Retire le vêtement de ton choix sélectionné par un vote des autres joueurs." },
+        { "id": "SPI_D12", "type": "dare", "level": "high", "content": "Masse sensuellement le dos ou la nuque du joueur de ton choix les yeux fermés." },
+        { "id": "SPI_D13", "type": "dare", "level": "high", "content": "Murmure à l'oreille d'un joueur ce que tu lui ferais si vous étiez seuls dans une chambre." },
+        { "id": "SPI_D14", "type": "dare", "level": "high", "content": "Tire ta prochaine volée les yeux bandés, guidé uniquement par la voix d'un partenaire collé à toi." },
+        { "id": "SPI_D15", "type": "dare", "level": "high", "content": "Fais un strip-tease express d'une minute sur le morceau musical le plus langoureux de la playlist." },
+        { "id": "SPI_F01", "type": "dare", "level": "final", "content": "Gage Final : Finis la soirée en sous-vêtements ou offre un massage intégral de 5 minutes au vainqueur." },
+        { "id": "SPI_F02", "type": "truth", "level": "final", "content": "Gage Final : Révèle ton secret le plus inavouable sur ta vie intime sans rien censurer." },
+        { "id": "SPI_F03", "type": "dare", "level": "final", "content": "Gage Final : Échange un baiser langoureux et passionné avec la personne de ton choix." },
+        { "id": "SPI_F04", "type": "dare", "level": "final", "content": "Gage Final : Laisse le vainqueur choisir 2 vêtements que tu dois enlever immédiatement." },
+        { "id": "SPI_F05", "type": "truth", "level": "final", "content": "Gage Final : Confesse qui autour de la cible possède le potentiel de séduction le plus élevé selon toi." },
+        { "id": "SPI_F06", "type": "dare", "level": "final", "content": "Gage Final : Danse un slow lascif et torride en tête-à-tête avec le vainqueur de la partie." }
+      ]
     }
-  ]
+  }
 }
